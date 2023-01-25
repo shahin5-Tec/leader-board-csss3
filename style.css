@@ -1,0 +1,176 @@
+/* Fonts family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+
+}
+
+/* Top players styles */
+.top-players {
+    margin-bottom: 30px;
+}
+
+.section-tittle {
+    color: #562EFF;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+
+}
+
+/* top blogs style */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 40px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnil img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-tittle {
+    font-size: 20px;
+}
+
+.blog-autor {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog-autor a {
+    color: #562EFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* courses styles */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 35px;
+}
+
+.course {
+    width: 252.42px;
+    height: 269px;
+    background-color: #FFFFFF;
+    rop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.course-autor {
+    color: #ED6B4F;
+    font-weight: 400;
+    font-size: 14.6913px;
+}
+
+.coure-duration {
+    background: #FFE4E8;
+    border-radius: 5px;
+    color: #FF4A60;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+    margin-right: 10px;
+}
+@media screen and (max-width:576px) {
+    .section-tittle {
+        color: #562EFF;
+        font-size: 24px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+   
+    .container{
+        width: 100%;
+   
+    }
+    .players {
+        
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        justify-items: center;
+    
+    }
+    
+    
+}
